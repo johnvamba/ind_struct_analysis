@@ -1,0 +1,36 @@
+.container{
+/*	display: inline;*/
+	display: block;
+	height:350px;
+	width: 100%;
+}
+
+.left, .right, .center{
+	float: left;
+}
+
+.left, .right{
+	display: block;
+	height: 100%;
+	width: 5%;
+	background-color: #0F0;
+}
+
+.center{
+	height: 100%;
+	width: 90%;
+	background-color: #00F;
+}
+
+.center > .beam{
+	height: 20%;
+	width: 100%;
+	background-color: #0FA;
+}
+
+.center > .support{
+	height: 20%;
+	width: 100%;
+	background: #F00; /*red*/
+}
+

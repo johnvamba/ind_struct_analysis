@@ -1,0 +1,1244 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"de",
+				"deflectPath"
+			],
+			[
+				"Defl",
+				"deflectPath"
+			],
+			[
+				"tem",
+				"tempC"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"mem",
+				"memTemp"
+			],
+			[
+				"mouse",
+				"mousedrag"
+			],
+			[
+				"tAr",
+				"tArea"
+			],
+			[
+				"base",
+				"base2"
+			],
+			[
+				"temp",
+				"tempShape"
+			],
+			[
+				"c",
+				"c_point"
+			],
+			[
+				"re",
+				"react"
+			],
+			[
+				"x",
+				"x_coor"
+			],
+			[
+				"vert",
+				"vertForce"
+			],
+			[
+				"mom",
+				"momentArm"
+			],
+			[
+				"moemn",
+				"momentArm"
+			],
+			[
+				"tle",
+				"tlength"
+			],
+			[
+				"tl",
+				"tlength"
+			],
+			[
+				"end",
+				"endPoint"
+			],
+			[
+				"shearb",
+				"shearb4elm"
+			],
+			[
+				"shear",
+				"shearforceb4"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"mome",
+				"momentArm"
+			],
+			[
+				"xt",
+				"xstep"
+			],
+			[
+				"y",
+				"yreact"
+			],
+			[
+				"all",
+				"allReact"
+			],
+			[
+				"this",
+				"thisArr"
+			],
+			[
+				"tlen",
+				"tlen"
+			],
+			[
+				"el",
+				"elm"
+			],
+			[
+				"div",
+				"dividedMembers"
+			],
+			[
+				"tL",
+				"tLength"
+			],
+			[
+				"moment",
+				"momentArm"
+			],
+			[
+				"area",
+				"areaForce"
+			],
+			[
+				"add",
+				"addReaction"
+			],
+			[
+				"rea",
+				"reaction"
+			],
+			[
+				"al",
+				"allReact"
+			],
+			[
+				"find",
+				"findMember"
+			],
+			[
+				"crea",
+				"createMomentPath"
+			],
+			[
+				"def",
+				"deflectPath"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"fo",
+				"fOnPoint"
+			],
+			[
+				"a",
+				"area2"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"shea",
+				"shearLimit"
+			],
+			[
+				"inter",
+				"intersections"
+			],
+			[
+				"Hi",
+				"Height"
+			],
+			[
+				"lo",
+				"loader"
+			],
+			[
+				"in",
+				"intersectText"
+			],
+			[
+				"di",
+				"distance"
+			],
+			[
+				"pat",
+				"pathname"
+			],
+			[
+				"int",
+				"intPoints"
+			],
+			[
+				"ba",
+				"backPanel"
+			],
+			[
+				"beam",
+				"beamMsc"
+			],
+			[
+				"v",
+				"visible"
+			],
+			[
+				"gr",
+				"Group"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"thi",
+				"this"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"bend",
+				"bendShape"
+			],
+			[
+				"be",
+				"bendingStress"
+			],
+			[
+				"walk",
+				"walkstep"
+			],
+			[
+				"sam",
+				"samp2"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"main",
+				"mainGroup"
+			],
+			[
+				"mai",
+				"mainGroup"
+			],
+			[
+				"path",
+				"paths"
+			],
+			[
+				"ap",
+				"applied"
+			],
+			[
+				"sl",
+				"splits"
+			],
+			[
+				"d",
+				"drawn"
+			],
+			[
+				"show",
+				"showPath"
+			],
+			[
+				"if",
+				"ifcalculated"
+			],
+			[
+				"spl",
+				"splitObjs"
+			],
+			[
+				"ar",
+				"arr2"
+			],
+			[
+				"arr",
+				"arr"
+			],
+			[
+				"has",
+				"hasChildren"
+			],
+			[
+				"sa",
+				"samp2"
+			],
+			[
+				"new",
+				"newglobal"
+			],
+			[
+				"text",
+				"textforces"
+			],
+			[
+				"ch",
+				"changePath"
+			],
+			[
+				"change",
+				"changePath"
+			],
+			[
+				"vi",
+				"visible"
+			],
+			[
+				"Pa",
+				"PathGroup"
+			],
+			[
+				"remove",
+				"removeChildren"
+			],
+			[
+				"strok",
+				"strokeColor"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"sp",
+				"sPoint1"
+			],
+			[
+				"sPoi",
+				"sPoint1"
+			],
+			[
+				"react",
+				"reactText"
+			],
+			[
+				"reac",
+				"reactText"
+			],
+			[
+				"ori",
+				"origForce"
+			],
+			[
+				"m",
+				"multipliers"
+			],
+			[
+				"two",
+				"two_point"
+			],
+			[
+				"no",
+				"noload"
+			],
+			[
+				"_mo",
+				"_moment2"
+			],
+			[
+				"to",
+				"toFixed"
+			],
+			[
+				"pre",
+				"prevLength"
+			],
+			[
+				"K",
+				"KN-M"
+			],
+			[
+				"left",
+				"leftcon"
+			],
+			[
+				"shearf",
+				"shearforce"
+			],
+			[
+				"load",
+				"loadHelper"
+			],
+			[
+				"dis",
+				"disWalk"
+			],
+			[
+				"shearFo",
+				"shearforce"
+			],
+			[
+				"total",
+				"totalLength"
+			],
+			[
+				"loa",
+				"loadHelper"
+			],
+			[
+				"or",
+				"origForce"
+			],
+			[
+				"All",
+				"allReact"
+			],
+			[
+				"sepa",
+				"separators"
+			],
+			[
+				"fi",
+				"findShortLength"
+			],
+			[
+				"drawn",
+				"drawnBasic"
+			],
+			[
+				"draw",
+				"drawObjs"
+			],
+			[
+				"jo",
+				"jointlist"
+			],
+			[
+				"membe",
+				"memberlist"
+			],
+			[
+				"remo",
+				"removeOnDown"
+			],
+			[
+				"inte",
+				"intersectText"
+			],
+			[
+				"p",
+				"pathgroup"
+			],
+			[
+				"on",
+				"onMouseDown"
+			],
+			[
+				"can",
+				"canvasWidth"
+			],
+			[
+				"defl",
+				"deflectCeil"
+			],
+			[
+				"stok",
+				"strokeWidth"
+			],
+			[
+				"stro",
+				"strokeColor"
+			],
+			[
+				"st",
+				"strokeWidth"
+			],
+			[
+				"chec",
+				"checkbox"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"onS",
+				"onShow"
+			],
+			[
+				"illu",
+				"illumodal"
+			],
+			[
+				"data",
+				"dataOBJ"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "beamDataStruct.js",
+			"settings":
+			{
+				"buffer_size": 7462,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "BeamAnalysisNew.html",
+			"settings":
+			{
+				"buffer_size": 27537,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sampleval.js",
+			"settings":
+			{
+				"buffer_size": 26170,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "extras.js",
+			"settings":
+			{
+				"buffer_size": 2662,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "femcalculator.js",
+			"settings":
+			{
+				"buffer_size": 38310,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Projects/StructAnalysis",
+		"/D/Projects/StructAnalysis/Unusables"
+	],
+	"file_history":
+	[
+		"/D/Projects/StructAnalysis/Unusables/Note.txt",
+		"/D/Projects/StructAnalysis/paperClass.js",
+		"/D/Projects/StructAnalysis/NewBeamTable.js",
+		"/D/Projects/StructAnalysis/femcalculator.js",
+		"/D/Projects/StructAnalysis/shapeControl.js",
+		"/D/Projects/StructAnalysis/sampleval.js",
+		"/D/Projects/StructAnalysis/mainControl.js",
+		"/D/Projects/StructAnalysis/BeamAnalysisNew.html",
+		"/D/Projects/StructAnalysis/beamDataStruct.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR13.681/paperClass.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR00.150/femcalculator.js",
+		"/D/Projects/StructAnalysis/variables.js",
+		"/D/Projects/StructAnalysis/extras.js",
+		"/D/Projects/StructAnalysis/Unusables/shearbendCalc.js",
+		"/D/Projects/StructAnalysis/Unusables/StuctAnalysisv3/sample.js",
+		"/D/Projects/StructAnalysis/Unusables/StuctAnalysisv3/shapeControl.js",
+		"/D/Projects/StructAnalysis/Unusables/StuctAnalysisv3/femcalculator.js",
+		"/D/Projects/StructAnalysis/Unusables/stresses.js",
+		"/D/Projects/StructAnalysis/papersample.js",
+		"/D/Projects/StructAnalysis/sample.js",
+		"/D/Projects/StructAnalysis/paperSample.html",
+		"/D/Projects/StructAnalysis/Unusables/stable2paper.js",
+		"/D/Projects/StructAnalysis/femSample.html",
+		"/D/Projects/StructAnalysis/Note.txt",
+		"/D/Projects/StructAnalysis/Unusables/stablePaperScript.js",
+		"/D/Projects/StructAnalysis/Snippets",
+		"/D/Projects/StructAnalysis/Unusables/StuctAnalysisv4/beamDataStruct.js",
+		"/D/Projects/StructAnalysis/pathGen.js",
+		"/D/Projects/StructAnalysis/paperHTML5/dist/paper-full.js",
+		"/D/Projects/StructAnalysis/paperClassBU.js",
+		"/D/Projects/StructAnalysis/sample2.js",
+		"/D/Projects/StructAnalysis/NewIllustrator.js",
+		"/D/Projects/StructAnalysis/paper.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR07.781/Old vers/StructAnalysis.continuehere/shearbendCalc.js",
+		"/D/Projects/StructAnalysis/Note.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR06.914/StructAnalysis/sample.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR00.241/StructAnalysis/shearbendCalc.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR03.584/Old vers/StuctAnalysisv4/Old vers/shearbendCalc.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR02.566/Old vers/StuctAnalysisv4/shearbendCalc.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR04.486/Old vers/StructAnalysis.continuehere/shearbendCalc.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR01.672/Old vers/StuctAnalysisv4/shearbendCalc.js",
+		"/D/Projects/StructAnalysis/illustrationControl.js",
+		"/D/Projects/paperHTML5/dist/paper-full.js",
+		"/D/Projects/StructAnalysis/paperSample.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR00.549/BeamAnalysisNew.html",
+		"/D/Projects/StructAnalysis/shearbendCalc.js",
+		"/D/Projects/StructAnalysis/TO DO LIST!",
+		"/D/Projects/StructAnalysis/SaveProg.js",
+		"/D/Projects/StructAnalysis/newFemCalc.js",
+		"/D/Projects/StructAnalysis/calculator.js",
+		"/D/Projects/StructAnalysis/femEditCalc.js",
+		"/D/Projects/StructAnalysis.continuehere/femcalculator.js",
+		"/D/Projects/StructAnalysis/Old vers/sample.js",
+		"/D/Projects/StructAnalysis/assets/library/bignumber.js",
+		"/D/Projects/StructAnalysis/femcalculatorOld.js",
+		"/D/Projects/StructAnalysis/variableNew",
+		"/D/StructAnalysis/beamDataStruct.js",
+		"/D/StructAnalysis/femcalculator.js",
+		"/D/StructAnalysis/illustrationControl.js",
+		"/D/StructAnalysis/shapeControl.js",
+		"/D/StructAnalysis/femSample.html",
+		"/D/StructAnalysis/mainControl.js",
+		"/D/StructAnalysis/sample.js",
+		"/D/StructAnalysis/pathGen.js",
+		"/D/StructAnalysis/calculator.js",
+		"/D/StructAnalysis/Old vers/shearbendCalc.js",
+		"/D/StructAnalysis/BeamAnalysisNew.html",
+		"/D/Projects/StuctAnalysis/femSample.html",
+		"/D/Projects/StuctAnalysis/femcalculator.js",
+		"/D/Projects/StuctAnalysis/shearbendCalc.js",
+		"/D/Projects/StuctAnalysis/NewBeamTable.js",
+		"/D/Projects/StuctAnalysis/asd.sublime-workspace",
+		"/D/Projects/StuctAnalysis/mainControl.js",
+		"/D/Projects/StuctAnalysis/sample.js",
+		"/D/Projects/StuctAnalysis/BeamAnalysisNew.html",
+		"/D/Projects/StuctAnalysis/illustrationControl.js",
+		"/D/Projects/StuctAnalysis/pathGen.js",
+		"/D/Projects/StuctAnalysis/beamDataStruct.js",
+		"/D/Projects/StuctAnalysis/Old vers/sample.js",
+		"/D/Projects/StuctAnalysis/bendingCalculator.js",
+		"/C/Users/L0liet/AppData/Local/Temp/GraphingData.java",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR03.041/mainControl.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR01.306/BeamAnalysisNew.html",
+		"/D/Projects/StuctAnalysis/Snap.svg/dist/snap.svg.js",
+		"/D/Projects/StuctAnalysis/Snap.svg-0.4.1/dist/snap.svg.js",
+		"/D/Projects/StuctAnalysis/Snap.svg-0.4.1/src/svg.js",
+		"/D/Projects/StuctAnalysis/Snap.svg-0.4.1/demos/animated-game/js/snap.svg.js",
+		"/D/Projects/StuctAnalysis/Snap.svg-0.4.1/test/attradd.js",
+		"/D/Projects/StuctAnalysis/Snap.svg-0.4.1/src/align.js",
+		"/D/Projects/jquery.svg.package-1.5.0/jquery.svgdom.min.js",
+		"/D/Projects/jquery.svg.package-1.5.0/jquery.svgfilter.min.js",
+		"/D/Projects/jquery.svg.package-1.5.0/jquery.svgfilter.js",
+		"/D/Projects/jquery.svg.package-1.5.0/jquery.svggraph.js",
+		"/D/Projects/jquery.svg.package-1.5.0/jquery.svggraph.min.js",
+		"/D/Projects/jquery.svg.package-1.5.0/jquery.svgplot.js",
+		"/D/Projects/jquery.svg.package-1.5.0/jquery.svg.js",
+		"/D/Projects/jquery.svg.package-1.5.0/jquery.svgplot.min.js",
+		"/D/Projects/jquery.svg.package-1.5.0/jquery.svganim.js",
+		"/D/Projects/jquery.svg.package-1.5.0/jquery.svganim.min.js",
+		"/D/Projects/jquery.svg.package-1.5.0/jquery.svgdom.js",
+		"/D/Projects/jquery.svg.package-1.5.0/jquery.svg.min.js",
+		"/D/Projects/StuctAnalysis/Old vers/BeamAnalysis.html",
+		"/D/Projects/StuctAnalysis/unitControl.js",
+		"/D/Projects/StuctAnalysis/shapeControl.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR00.898/femcalculator.js",
+		"/D/Projects/StuctAnalysis/unitControl",
+		"/D/Projects/StuctAnalysis/MemberForm.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DR00.165/femcalculator.js",
+		"/C/Users/L0liet/Documents/NetBeansProjects/BeamAnalysis/public_html/femcalculator.js",
+		"/D/Projects/StuctAnalysis/control.js",
+		"/D/Projects/StuctAnalysis/calculator.js",
+		"/D/Projects/StuctAnalysis/ReactTable.js",
+		"/C/Users/L0liet/Documents/NetBeansProjects/BeamAnalysis/public_html/femcalculator.rar",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DI00.335/femcalculator.js",
+		"/C/Users/L0liet/AppData/Local/Temp/Rar$DI00.737/calculator.js",
+		"/D/Projects/StuctAnalysis/BeamAnalysis.html",
+		"/D/Projects/StuctAnalysis/TableNew.js",
+		"/D/Projects/StuctAnalysis/assets/loadtypes/2_point.png",
+		"/D/Projects/StuctAnalysis/beamtable.js",
+		"/D/Projects/StuctAnalysis/assets/loadtypes/right-con.png",
+		"/D/Projects/StuctAnalysis/calculate.js",
+		"/D/Projects/StuctAnalysis/functions.js",
+		"/D/Projects/StuctAnalysis/sample.html",
+		"/D/Projects/StuctAnalysis/test.css",
+		"/D/Projects/StuctAnalysis/beamSVG.js",
+		"/D/Projects/StuctAnalysis/lineEx.html",
+		"/D/Projects/StuctAnalysis/beamSVG.css",
+		"/D/Projects/StuctAnalysis/SVGex.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\Projects\\StructAnalysis",
+			"D:\\StructAnalysis",
+			"D:\\WebDev\\InteractiveMap\\paulgit",
+			"D:\\WebDev\\paulgit",
+			"D:\\WebDev\\laraveldatatables",
+			"D:\\WebDev\\laravel5-example-master",
+			"D:\\WebDev\\Final_dev_IM"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"shape",
+			"deflec",
+			"console.log",
+			"msc",
+			"solveD",
+			"tria",
+			"sublen",
+			"center2",
+			"center",
+			"two2",
+			"two",
+			"center",
+			"tlength",
+			"endmoment: moment",
+			");",
+			"cload",
+			"view",
+			"pathG",
+			"event.point",
+			"event.poin",
+			"x",
+			"createM",
+			"intPoints",
+			"est",
+			"inspect",
+			"shearlimit",
+			"val",
+			"label",
+			"=",
+			"var",
+			"findMember",
+			"material",
+			"intersecttext",
+			"label",
+			"sheartext",
+			"sheartext\\",
+			"maingro",
+			"console.log",
+			"samp",
+			"samp2",
+			"textforces",
+			"paths",
+			"reactText",
+			"drawObjs",
+			"ceilings",
+			"basicDraw",
+			"illu",
+			"showGraph",
+			"add",
+			"text",
+			"name",
+			"beamObjs",
+			"drawObjs",
+			"paths",
+			"beam",
+			"data",
+			"total",
+			"react",
+			"findshort",
+			"total",
+			"stressesOn",
+			"total",
+			"ceilings",
+			"ceil",
+			"totalLen",
+			"beam",
+			"console",
+			"selected",
+			"reactions",
+			"drawObjs",
+			"bendShape",
+			"positionCent",
+			"position",
+			"beam",
+			"Beam",
+			"center",
+			"pregraph",
+			"getTo",
+			"total",
+			"toGlobal",
+			"msc",
+			"changeDistRate",
+			"drawn",
+			"illudata",
+			"setBase",
+			"femBase",
+			"msc",
+			"illu",
+			"intersectLin",
+			"init",
+			"prop",
+			"modal",
+			"key",
+			"onKeyDown",
+			"key",
+			"\n\t<button id='btn'>Button</button>",
+			"forIlludata",
+			"showIn",
+			"2",
+			"partition",
+			"part",
+			"hidden",
+			"drop",
+			"illumodal",
+			"dropdown",
+			"ui dropdown",
+			"float",
+			"grey",
+			"showIntersect",
+			"showPath",
+			"y",
+			"illu",
+			"machine",
+			"findMember",
+			"bending",
+			"react",
+			"abs",
+			"P",
+			"momentarm",
+			".getTota",
+			".len",
+			"dimens",
+			"findMember",
+			"push",
+			"illustrate",
+			"illu",
+			"simplify",
+			"solvePR"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Height",
+			"Base",
+			"ui selection dropdown",
+			"joints",
+			"m",
+			"this.",
+			"onchange",
+			"",
+			"mga",
+			"k",
+			"ang",
+			" sa",
+			"ang",
+			"ng",
+			"ang",
+			"m",
+			"n",
+			"s",
+			"y",
+			"k",
+			"ay ",
+			"ay",
+			"ang",
+			"na ",
+			"na",
+			"ang",
+			"na",
+			",",
+			".",
+			"ang",
+			"n",
+			"ang",
+			"n",
+			"g",
+			"i",
+			"ang",
+			",",
+			"y",
+			"n",
+			",",
+			"na",
+			"ang",
+			" sa",
+			"ng",
+			"mga",
+			"ng",
+			" sa",
+			"sa",
+			"ang",
+			"ma",
+			"ang ",
+			"tao ",
+			"na ",
+			"na",
+			"ang",
+			"Ang",
+			"ng",
+			"siya",
+			"n",
+			"ang",
+			"sa ",
+			"sa",
+			"ang",
+			"ng",
+			"n",
+			"sa",
+			"n",
+			"g",
+			"m",
+			",",
+			"K",
+			"o",
+			"ang",
+			"ng",
+			"g",
+			"ang",
+			"g",
+			"ng",
+			" na ",
+			"iyon",
+			"m",
+			" ay",
+			" na",
+			" na ",
+			" ang ",
+			" sa ",
+			" mga ",
+			" na ",
+			" ng ",
+			" ni ",
+			" na ",
+			" sa ",
+			" ",
+			"007236"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "beamDataStruct.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7462,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6672,
+								6672
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "BeamAnalysisNew.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19853,
+								19853
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6823.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "sampleval.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25777,
+								25777
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 17496.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "extras.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1570,
+								1570
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1053.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "femcalculator.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37142,
+								37142
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 17658.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.952919020716,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "asd.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 298.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

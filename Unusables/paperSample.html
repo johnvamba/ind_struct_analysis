@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+<meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<!-- Load the Paper.js library -->
+<script type="text/javascript" src="paperHTML5/dist/paper-full.js"></script>
+  <script src="assets/library/jquery.min.js"></script>
+  <script src="semantic/semantic.js"></script>
+
+<script type='text/javascript' src='sample.js'></script>
+<script type="text/javascript" src='papersample.js'></script>
+<!-- Define inlined JavaScript -->
+	<!-- // Only executed our code once the DOM is ready. -->
+	
+
+</script>
+</head>
+<body >
+	<canvas style='background-color: grey;' id="myCanvas" width='1200' height="500"></canvas>
+	<button id='add'>AddtoGraph</button>
+	<button id='btn'>IlluGraph</button>
+	<button id='calc'>CalcGraph</button>
+
+
+	<div class="grouped fields">
+          <label>Show Graph:</label>
+          <div class='list'>
+          <div class="field">
+              <div class="ui toggle graph checkbox">
+                <input name="graph" data-value='allPath' checked="checked" type="radio">
+                <label>All</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui toggle graph checkbox">
+                <input name="graph" data-value='shearPath' type="radio">
+                <label>Shear</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui toggle graph checkbox">
+                <input name="graph" data-value='momentPath' type="radio">
+                <label>Moment</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui toggle graph checkbox">
+                <input name="graph" data-value='deflectPath' type="radio">
+                <label>Deflection</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+</body>
+</html>

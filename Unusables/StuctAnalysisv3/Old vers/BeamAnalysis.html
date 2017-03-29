@@ -1,0 +1,596 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>BSA Calculator</title>
+
+  <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="test.css">
+  <link rel="stylesheet" type="text/css" href="beamSVG.css">
+
+  <script src="assets/library/jquery.min.js"></script>
+  <script src="semantic/semantic.js"></script>
+  <script src="calculator.js"></script>
+  <script src="control.js"></script>
+  <script src="beamtable.js"></script>
+  <script src="calculate.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="ui left visible vertical inverted sidebar menu">
+  	<a class="item" href="">
+  		<i class="big icons">
+        <i class="large blue minus icon"></i>
+        <i class="corner blue add icon"></i>
+      </i>
+      <b>Beam Stress Analysis</b>
+  	</a>
+  	<div class="item"><i class="edit link icon" id="material"></i>
+        <div class="header" >Material Information</div>
+
+            <h5 class="ui inverted header">
+                <img class="ui rounded tiny image" id="beamImg" src="assets/beamtypes/basic.png">
+                <div class="content">
+                  <div id="beamtitle">Beam Type</div>
+                  
+                  <div class="sub header" id="dimensions"><!-- Dimensions -->
+                    <!-- Base: <span class="d1"></span>
+                      <br>Height: <span class="d2"></span>
+                      <br>Flange: <span class="d3"></span>
+                      <br>Something: <span class="d4"></span> -->
+                      Dimensions
+                  </div>
+                </div>
+            </h5>
+
+            <div class="ui inverted accordion">
+              <div class="title"><i class="dropdown icon"></i>Calculations</div>
+              <div class="content">
+                <div class="menu">
+                  <p class="item" id="centriod">Centriod</p>
+                  <p class="item" id="area">Area</p>
+                  <p class="item" id="inersia">Inersia</p>
+                </div>
+              </div>
+
+            </div>
+
+  	</div>
+    <a class="item"><i class="write icon"></i>New beam</a>
+    <a class="item"  onclick="$('#psModal').modal('show');"><i class="options icon"></i>Program Settings</a>
+  </div> <!-- end sidebar -->
+
+
+  <div class="pusher">
+      <!-- Masthead -->
+      <div class="ui masthead segment">
+          <div class="ui dividing header">Member Table
+            <!-- display button -->
+            <button class="ui toggle button" id="illustbutton">
+              <i class="unhide icon"></i>Beam Illustration
+            </button>
+            <div class="ui buttons">
+              <!-- Add Member -->
+              <button class="ui button" id="addMem">
+                <i class="add icon"></i>Add Member
+              </button>
+              <!-- Calculate button -->
+              <button class="ui toggle button" id="calcubutton">
+                <i class="calculator icon"></i>Calculate Beam
+              </button>
+            </div>
+          </div>
+
+          <div class="content">
+          <table class="ui seven column compact celled structured table" id="memTable">
+            <thead>
+              <tr>
+                <th rowspan="2">MemberID
+                  <h5 class="grey">Click <i class="edit icon"></i> to change setting</h5>
+                </th>
+                <th colspan="2">Joints</th>
+                <th rowspan="2">Load</th>
+                <th rowspan="2">Length (Meters)</th>
+                <th rowspan="2">Elasticity</th>
+                <th rowspan="2">Inersia</th>
+              </tr>
+              <tr>
+                <th>Left</th>
+                <th>Right</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          </div>
+<!--         
+        <div class="ui segment" id="">
+        </div>
+ -->
+        <!-- Member Table -->
+        <!-- <div class="ui basic segment"></div> -->
+      </div>
+
+      <!-- Lower details -->
+  </div>
+
+  <!-- Modals -->
+
+  <div class="ui small modal" id="matModal">
+  <!--     Something Modal for Material setting -->
+    <div class="header">
+      Material Specification Setting
+    </div>
+    <div class="content" >
+      <!-- <p>Are you sure you want to delete your account</p> -->
+
+      <div class="ui grid">
+        <!-- Right grid -->
+        <div class="six wide column">
+          <h4 class="ui dividing header">Beam type</h4>
+          <!-- select tag version -->
+<!--           <select name="beam" class="ui selection dropdown" id="beam" required>
+            <option value="" >Select a beam</option>
+            <option value="beamform1">Square Beam</option>
+            <option value="beamform2">Rectangle Beam</option>
+            <option value="beamform3">I-Beam</option>
+            <option value="beamform4">T-Beam</option>
+            <option value="beamform5">Cylindrical Beam</option>
+          </select> -->
+          <img class="ui rounded centered tiny image" id="beampic" src="assets/beamtypes/basic.png">
+
+          <div class="ui selection tiny dropdown" id="beamDD">
+            <input name="joint-type" >
+            <div class="default text">None</div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <div class="item" data-value="square" name="square">Square Beam</div>
+              <div class="item" data-value="rec" name="rec">Rectangle Beam</div>
+              <div class="item" data-value="ibeam" name="ibeam">I-Beam</div>
+              <div class="item" data-value="tbeam" name="tbeam">T-Beam</div>
+              <div class="item" data-value="circle" name="circle">Cylindrical Beam</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="ten wide column">
+          <h4 class="ui dividing header">Dimensions<span style="color:#aaa;font-weight:normal;"> - only in millimeter</span></h4> 
+
+            <!-- Default -->
+            <div id="beamform" class="group">
+              <h4 class="ui"> Pick a beam first</h4>
+            </div>
+
+            <div id="square" class="group">
+            <!-- Square -->
+              <form class="ui form" id="square" onsubmit="return false;">
+                <div class="field">
+                  <input name="base" placeholder="Base" type="text">
+                </div>
+              </form>
+            </div>
+
+            <!-- Rectangle -->
+            <div id="rec" class="group">
+              <form class="ui form" id="rec" onsubmit="return false;">
+              <div class="two fields">
+                <div class="field dimension">
+                  <input name="base" placeholder="Base" type="text">
+                </div>
+                <div class="field">
+                  <input name="height" placeholder="Height" type="text">
+                </div>
+              </div>
+            </form>
+            </div>
+
+            <!-- I-beam -->
+            <div id="ibeam" class="group">
+              <form class="ui form" id="ibeam" onsubmit="return false;">
+            <div class="two fields">
+              <div class="field">
+                <input name="base" placeholder="Base/Width" type="text">
+              </div>
+              <div class="field">
+                <input name="height" placeholder="Height" type="text">
+              </div>
+            </div>
+            <div class="two fields">
+              <div class="field">
+                <input name="web" placeholder="Web Thickness" type="text">
+              </div>
+              <div class="field">
+                <input name="flange" placeholder="Flange Thickness" type="text">
+              </div>
+            </div>
+
+            <div>Note: Limited to symmetrical beams</div>
+            </form>
+            </div>
+
+            <div id="tbeam" class="group">
+            <form class="ui form" id="tbeam" onsubmit="return false;">
+              <!-- T-Beam -->
+            <div class="two fields">
+              <div class="field">
+                <input name="base" placeholder="Base/Width" type="text">
+              </div>
+              <div class="field">
+                <input name="height" placeholder="Height" type="text">
+              </div>
+            </div>
+            <div class="two fields">
+              <div class="field">
+                <input name="web" placeholder="Web Thickness" type="text">
+              </div>
+              <div class="field">
+                <input name="flange" placeholder="Top Flange Thickness" type="text">
+              </div>
+            </div>
+
+            <div>Note: Limited to symmetrical beams</div>
+            </form>
+            </div>
+
+            <!-- circular -->
+            <div id="circle" class="group">
+            <form class="ui form" id="circle" onsubmit="return false;">
+              <div class="field">
+                <input name="diameter" placeholder="Diameter" type="text">
+              </div>
+            </form>
+            </div>
+            
+        </div>
+
+      </div>
+    </div>
+    <div class='actions'>
+      <button class="ui ok blue button">
+        <i class="check icon"></i>Set Material
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal for Editing Member Settings -->
+  <div class="ui large modal" id="memSetting">
+    <div class="header">
+      <i class="edit link icon"></i>Edit Member # <span id="memCount">1</span>
+    </div>
+    <div class="content">
+<!--       Forms here -->
+      <div class="ui grid">
+        <!-- Load and others -->
+        <div class="ui four wide column">
+          <h4 class="ui dividing header">Important</h4>
+            <form class="ui small form" id='imp'>
+              <div class="field">
+                <label>Inersia</label>
+                <div class="field">
+                  <input name="inertia" placeholder="mm^4" type="text">
+                </div>
+                <label>Length</label>
+                <div class="field">
+                  <input name="length" placeholder="in mm" type="text">
+                </div>
+                <label>Elasticity</label>
+                <div class="field">
+                  <input name="elastic" placeholder="in MPa" type="text">
+                </div>
+              </div>
+            </form>
+
+        </div>
+
+        <div class="ui four wide column">
+            <h4 class="ui dividing header">Load</h4>
+
+            <form class="ui small form" id='load'>
+              <img class="ui rounded middle aligned image beamload"  src="assets/loadtypes/noload.png"><!-- do slightly larger; 40px --> 
+              <div class="ui dropdown loadDD" style="padding-left:20px;">
+                <input name="joint-type" >
+                <div class="default text">None</div>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                  <div class="item" data-value="c-point" name="c-con">Center Concentrated</div>
+                  <div class="item" data-value="2-point" name="2-con">2-point Concentrated</div>
+                  <div class="item" data-value="equally" name="evenly">Evenly Distributed</div>
+                  <div class="item" data-value="left-con" name="left-dis">Left Distributed</div>
+                  <div class="item" data-value="right-con" name="right-dis">Right Distributed</div>
+                  <div class="item" data-value="noload" name="none">None</div>
+                </div>
+              </div>
+              <div class="field load" hidden style="padding-top:20px;">
+                <label>Load amount</label>
+                <input name="length" placeholder="in either KN-M or just KN" type="text">
+              </div>
+            </form>
+        </div>
+
+        <!-- Joint setting -->
+        <div class="ui eight wide column">
+        <h4 class="ui dividing header">Joints</h4>
+
+          <div class="ui two column grid">
+            <div class="column">
+              <h4 class="ui dividing header">Start Joint</h4>
+              <form class="ui small form" id='startjoint'>
+              <img class="ui rounded middle aligned image start jointImg" src="assets/jointfaces/none.png"><!-- do slightly larger; 40px --> 
+              <div class="ui dropdown start jointDD" style="padding-left:20px;">
+                <input name="joint-type" >
+                <div class="default text">Select type</div>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                  <div class="item" data-value="roller">Roller</div>
+                  <div class="item" data-value="pin">Pin</div>
+                  <div class="item" data-value="startfix">Fix</div>
+                  <div class="item" data-value="none">None</div>
+                </div>
+              </div>
+              <div class="field start" style="padding-top:20px;">
+                <div class="field y-coor">
+                  <label>Applied Force on Y-coordinate</label>
+                  <input name="y-coor" placeholder="in KN" type="text">
+                </div>
+                <div class="field r-coor">
+                  <label>Applied Force on R-coordinate</label>
+                  <input name="r-coor" placeholder="in KN-M" type="text">
+                </div>
+              </div>
+            </form>
+            </div>
+            <div class="column">
+              <h4 class="ui dividing header">End Joint</h4>
+              <form class="ui small form" id='endjoint'>
+              <img class="ui rounded middle aligned image end jointImg" src="assets/jointfaces/none.png"><!-- do slightly larger; 40px --> 
+              <div class="ui dropdown end jointDD" style="padding-left:20px;">
+                <input name="joint-type" type="hidden">
+                <div class="default text">Select type</div>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                  <div class="item" data-value="roller">Roller</div>
+                  <div class="item" data-value="pin">Pin</div>
+                  <div class="item" data-value="endfix">Fix</div>
+                  <div class="item" data-value="none">None</div>
+                </div>
+              </div>
+              <div class="field end" style="padding-top:20px;">
+                <div class="field y-coor">
+                <label>Applied Force on Y-coordinate</label>
+                  <input name="y-coor" placeholder="in KN" type="text">
+                </div>
+                <div class="field r-coor">
+                <label>Applied Force on R-coordinate</label>
+                  <input name="r-coor" placeholder="in KN-M" type="text">
+                </div>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="ui red cancel button">
+        <!-- <i class=" icon"></i> -->Revert Changes
+      </button>
+      <button class="ui ok button">
+        <i class="check icon"></i>Done
+      </button>
+
+    </div>
+  </div>
+  <!-- miscellaneous calc modal -->
+  <div class="ui small modal" id="msc">
+    <div class="header">
+      Member id Miscellaneous Calculation
+    </div>
+    <div class='content'>
+          <div class="ui basic sticky segment">
+        <div class="ui top attached tabular menu">
+          <a class="active item" data-tab="first">FEMoments</a>
+          <a class="item" data-tab="second">K-Matrix</a>
+          <a class="item" data-tab="third">Displacements</a>
+          <a class="item" data-tab="fourth">Q~moments</a>
+        </div>
+        <div class="ui bottom attached active tab segment" data-tab="first">
+          <p>FSb = </p>
+          <p>FMb = </p>
+          <p>FSe = </p>
+          <p>FMe = </p>
+        </div>
+        <div class="ui bottom attached tab segment" data-tab="second">
+          <table class="ui five column small compact table">
+            <thead>
+              <tr>
+                <th>x</th>
+                <th>JointAv</th>
+                <th>JointAr</th>
+                <th>JointBv</th>
+                <th>JointBr</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>JointAv</td>
+                <td>No Name Specified</td>
+                <td>Unknown</td>
+                <td class="negative">None</td>
+                <td></td>
+              </tr>
+              <tr class="positive">
+                <td>JointAr</td>
+                <td>Jimmy</td>
+                <td><i class="icon checkmark"></i> Approved</td>
+                <td>None</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>JointBv</td>
+                <td>Jamie</td>
+                <td>Unknown</td>
+                <td class="positive"><i class="icon close"></i> Requires call</td>
+                <td></td>
+              </tr>
+              <tr class="negative">
+                <td>JointBr</td>
+                <td>Jill</td>
+                <td>Unknown</td>
+                <td>None</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="ui bottom attached tab segment" data-tab="third">
+          <p>Displacement Sb = </p>
+          <p>Displacement Mb = </p>
+          <p>Displacement Se = </p>
+          <p>Displacement Me = </p>
+        </div>
+        <div class="ui bottom attached tab segment" data-tab="fourth">
+          <p>QFSb = </p>
+          <p>QFMb = </p>
+          <p>QFSe = </p>
+          <p>QFMe = </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- program setting modal -->
+
+  <div class="ui small modal" id="psModal">
+    <div class="header">
+      <i class="settings icon"></i>Settings (Under Construction)
+    </div>
+    <div class="content">
+
+<!--       Something Modal for program setting -->
+      <div class="ui grid">
+        <!-- Right grid -->
+        <div class="eight wide column">
+          <h4 class="ui dividing header">Beam Settings</h4>
+          <form class="ui form">
+            <div class="field">
+              <div class="ui checkbox">
+                <input name="example" type="checkbox">
+                <label>Show pre-calculation values.</label>
+              </div>
+            </div>
+            
+            <div class="field">
+              <div class="ui checkbox">
+                <input name="example" type="checkbox">
+                <label>Use Material calculation for Beam</label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="eight wide column">
+          <h4 class="ui dividing header">Some Paragraphs</h4>
+          <!-- <div class="ui checkbox">
+            <input name="example" type="checkbox">
+            <label>Show pre-calculation values.</label>
+          </div> -->
+          <p>Copyright 2016. <i class="copyright icon"></i></p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class='ui modal' id='drawing'>
+    <div class='header'>Beam Illustration (sample only)
+      <div class='actions' style='float:right;'>
+          <div class="ui ok grey button" data-content="The default theme's basic popup removes the pointing arrow." data-variation="basic">
+            <i class="settings icon"></i>Settings
+          </div>
+        <i class="grey close link icon" onclick='closeThis()'></i>
+      </div>
+    </div>
+
+    <div class='content' style="overflow-x: scroll; min-height:400px;">
+      <!-- <div class="container">
+        <div class="left"></div>
+        <div class="center">
+          <div class="beam"></div>
+          <div class="support"></div>
+        </div>
+        <div class="right"></div>
+      </div> -->
+        <svg width="100%" height="100%">
+          <g class='beam' id='member1'>
+            <g class='startseparator'>
+              <line x1='50' y1='25%' x2='50' y2='75%' style='stroke:#000;stroke-width:2;opacity:0.1;'>
+            </g>
+            <g class='endseparator'>
+              <line x1='150' y1='25%' x2='150' y2='75%' style='stroke:#000;stroke-width:2;opacity:0.1;'>
+            </g>
+            <g class='bar' transform='translate(50,50%)'>
+              <rect x="50" y="50%" width="100" height="20"
+                    style='fill:#44c;'></rect> <!-- something-->
+              <text x='70' y='55%' fill='white'>length</text>
+            </g>
+            <g class='start'>
+              <image xlink:href='assets/jointfaces/pin.png' x='50' y='50%' width='40' height='40' transform='translate(-20,10)'>
+            </g>
+            <g class='end'>
+              <image xlink:href='assets/jointfaces/roller.png' x='150' y='50%' width='40' height='40' transform='translate(-20,10)'>
+            </g>
+            <text x='70' y='250'>Member 1</text>
+          </g>
+
+          <g class='beam' id='member2'>
+            <g class='startseparator'>
+              <!-- <line x1='50' y1='25%' x2='50' y2='75%' style='stroke:#000;stroke-width:2;opacity:0.25;'> -->
+            </g>
+            <g class='endseparator'>
+              <line x1='300' y1='25%' x2='300' y2='75%' style='stroke:#000;stroke-width:2;opacity:0.1;'>
+            </g>
+            <g class='bar' transform='translate(50,50%)'>
+              <rect x="150" y="50%" width="150" height="16"
+                    style='fill:#44c;'></rect> <!-- something-->
+              <text x='195' y='54%' fill='white'>length</text>
+            </g>
+            <g class='start'>
+              <!-- <image xlink:href='assets/jointfaces/pin.png' x='50' y='50%' width='40' height='40' transform='translate(-20,10)'> -->
+            </g>
+            <g class='end'>
+              <!-- <image xlink:href='assets/jointfaces/roller.png' x='250' y='50%' width='40' height='40' transform='translate(-20,10)'> -->
+            </g>
+            <text x='195' y='250'>Member 2</text>
+          </g>
+        </svg>
+    </div>
+
+  </div>
+
+  <div class='ui small modal' id='score'>
+    <div class='header'>Beam Reactions/Analysis</div>
+
+
+  </div>
+
+    <div class='ui popup' style='min-height: 0px !important;' id='drawSetting'>
+      <div class='content'>
+        <div class='ui sub header'>Draw Settings</div>
+      </div>
+      <div class='content' style='width:250px;'>
+        <form class='ui form'>
+        </form>
+      </div>
+    </div>
+
+</body>
+ 
+</html>

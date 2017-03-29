@@ -1,0 +1,3 @@
+var reactionTable = (function(){
+	
+});
