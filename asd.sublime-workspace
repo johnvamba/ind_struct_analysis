@@ -597,11 +597,11 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Projects/StructAnalysis",
-		"/D/Projects/StructAnalysis/Unusables"
+		"/D/Projects/StructAnalysis"
 	],
 	"file_history":
 	[
+		"/D/Projects/StructAnalysis/.gitignore",
 		"/D/Projects/StructAnalysis/Unusables/Note.txt",
 		"/D/Projects/StructAnalysis/paperClass.js",
 		"/D/Projects/StructAnalysis/NewBeamTable.js",
@@ -728,8 +728,7 @@
 		"/D/Projects/StuctAnalysis/test.css",
 		"/D/Projects/StuctAnalysis/beamSVG.js",
 		"/D/Projects/StuctAnalysis/lineEx.html",
-		"/D/Projects/StuctAnalysis/beamSVG.css",
-		"/D/Projects/StuctAnalysis/SVGex.html"
+		"/D/Projects/StuctAnalysis/beamSVG.css"
 	],
 	"find":
 	{
@@ -1038,8 +1037,8 @@
 						"selection":
 						[
 							[
-								19853,
-								19853
+								18767,
+								18767
 							]
 						],
 						"settings":
@@ -1049,7 +1048,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6823.0,
+						"translation.y": 6394.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1228,7 +1227,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
