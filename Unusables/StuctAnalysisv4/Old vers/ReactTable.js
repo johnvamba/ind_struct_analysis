@@ -1,3 +1,0 @@
-var reactionTable = (function(){
-	
-});
