@@ -174,6 +174,16 @@ var thisDocument = function(){
     }
   });
 
+  $('.input.testOn .ui.button').on('click',function(e){
+      var limit = dataOBJ.tlength();
+      var val=$('#testOn').val()
+      if(limit==undefined||!limit||limit<val||val<0){
+        alert('Out of bounce input')
+      }
+      thisGlobal.entry(val);
+      // thisGlobal.showPath($(this).attr('data-value'));
+    });
+
   illu.click(function(){
     var hasdata = dataOBJ.hasData(); //depreciated
 
@@ -214,6 +224,7 @@ var thisDocument = function(){
     react.removeClass('disabled');
     illu.removeClass('disabled');
     $addMember.addClass('disabled');
+    $('.input.testOn').show();
   });
 
   react.click(function(){

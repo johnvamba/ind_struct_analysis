@@ -72,13 +72,14 @@ thisGlobal = {
   showPath:function(path){},
   basicDrawOBJ:function(obj){}, //creates drawObjs on paperscript
   dataCalled:function(xcoor){ //called onMouseButton paperclass
-    // console.log(xcoor);
+    console.log(xcoor);
     var c = dataOBJ.getCalcMSC(xcoor.toFixed(2));
     // console.log('called dataOBJ', xcoor, 'object',c);
     return c;
   },
   // reactList:function(obj){},
-  curveOn:function(member){}
+  curveOn:function(member){},
+  entry: function(x){}
 }
 
 
@@ -118,7 +119,7 @@ simplifiers = {
 }
 
 var multipliers = {
-  shearstresses:7,
+  shearstresses:9,
   distanceRate: 50 //pixel distance of cm or meter/100
   ,reactRate:1
   ,momentForceRate:0.25

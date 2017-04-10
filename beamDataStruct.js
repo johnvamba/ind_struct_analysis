@@ -262,6 +262,9 @@ var DataStruct = (function(){
 		},
 		hasData:function(){ //depreciate this
 			return alldata.length > 0 || FormData.length > 0;
+		},
+		tlength: function(){
+			return getTotalLength()
 		}
 	}
 });

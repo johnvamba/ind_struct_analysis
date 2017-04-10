@@ -822,7 +822,7 @@ function Beam() {
 			//NOTE! convert to N/m2 for consistency
 			//N/mm2 * 1000000 = N/m2 = pascal => (1000) = kPa
 		}
-		var shearLimit=7;
+		var shearLimit = (multipliers.shearstresses!=undefined?multipliers.shearstresses:9);
 		function shearStr(){ //add
 			var strs = new Array(shearLimit);
 			var memTemp = findMember(x_coor);
@@ -896,18 +896,21 @@ function Beam() {
 			var height = (SHAPE === 'square' ? dim.Base : SHAPE ==='circle' ? dim.Diameter : dim.Height);
 			var step = height/(shearLimit-1); 
 			for(var i = 0;i<strs.length;i++){
-				var tempH=step*i <= memTemp.msc.centriod ? step*i : height-step*i,
-					tempC=tempH/2;
+				var tempH=(step*i <= memTemp.msc.centriod ? step*i : height-step*i), //sakto?
+					tempC=tempH/2; //sayop pd ata
 				temp.push({
 					step: step*i, //top to bottom height!
 					height: tempH, //height from top
 					cHeight: tempC, //center height
-					resultant: memTemp.msc.centriod - tempH + tempC,
+					resultant: memTemp.msc.centriod - tempH + tempC, //sakto?
 					width: getWidth[SHAPE](step*i),
 					oWidth: (SHAPE ==='circle' ? dim.Diameter : dim.Base),
+					centriod: memTemp.msc.centriod,
+					aboveCentriod: (step*i <= memTemp.msc.centriod)
+					// area: getArea['circle'](getWidth[SHAPE](step*i),tempH)
 				});
 			}
-			// console.log(temp, step);
+			console.log(temp, step);
 
 			for (var i = 0; i < strs.length; i++) {
 				// strs[i] = getRandomArbitrary(20,40);

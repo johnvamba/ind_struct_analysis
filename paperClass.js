@@ -280,7 +280,7 @@ paper.setup(canvas);
 			fillColor:'black'
 		}), //transfer to different paperscript.
 		shearShape.fillColor.alpha = 0.2;
-		shearStep = 100 / 6; //divided by parts, means parts + 1 = edges; requires 7 edges
+		shearStep = 100 / (multipliers.shearstresses - 1); //divided by parts, means parts + 1 = edges; requires 7 edges
 		var walkstep = 25;
 		for (var i = 1; i < multipliers.shearstresses +1; i++) {
 			shearShape.insert(i,[0,walkstep]);
@@ -294,6 +294,7 @@ paper.setup(canvas);
 			sheartext.addChild(sF);
 			walkstep += shearStep;
 		}
+		// shearShape.smooth({type:'asymmetric'}); //mas bati
 
 		bendShape = new paper.Path({
 			strokeColor: 'black',
@@ -502,9 +503,15 @@ paper.setup(canvas);
 			}
 		}
 	});
-	//  = {
 
-	// }
+	function entry(int){ //change here
+		stress.hideAll();
+		intersectLine.visible = true;
+		intersectLine.position.x = beamMsc.beam.bounds.left + simplifiers.changeDistRate(int);
+		// console.log("read on paperscript")
+		stress.show(parseFloat(int));
+	}
+	thisGlobal.entry =entry;
 
 	//sub functions //don't touch here
 	var pathG,beamMsc;
